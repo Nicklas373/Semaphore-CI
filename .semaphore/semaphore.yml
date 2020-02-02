@@ -1,13 +1,22 @@
 version: v1.0
-name: Initial Pipeline
+name: HANA-CI-Bot
 agent:
   machine:
     type: e1-standard-2
-    os_image: ubuntu1804
+
+  containers:
+  - name: Oven
+    image: alanndz/oven:latest
+
 blocks:
-  - name: 'Block #1'
+  - name: "Build"
     task:
+      secrets:
+        - name: keys
+
       jobs:
-        - name: 'Job #1'
-          commands:
-            - checkout
+      - name: Compile Kernel
+        commands:
+          - wget https://raw.githubusercontent.com/Nicklas373/CI/CI/ci.sh
+          - chmod a+x ci.sh
+          - bash ci.sh
