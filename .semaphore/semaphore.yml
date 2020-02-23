@@ -17,6 +17,6 @@ blocks:
       jobs:
       - name: Compile Kernel
         commands:
-          - wget https://raw.githubusercontent.com/Nicklas373/CI/CI/ci.sh
-          - chmod a+x ci.sh
-          - bash ci.sh
+          - wget https://raw.githubusercontent.com/Nicklas373/CI/CI/ci
+          - chmod a+x ci
+          - bash ci
