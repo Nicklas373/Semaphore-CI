@@ -17,4 +17,6 @@ blocks:
       jobs:
       - name: Compile Kernel
         commands:
-          - run: sh -c  "$(curl -fsSL  https://github.com/nicklas373/build_kernel/raw/test/.circleci/build.sh)"
+          - wget https://github.com/nicklas373/build_kernel/raw/test/.circleci/build.sh
+          - chmod a+x build.sh
+          - bash build.sh
