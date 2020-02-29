@@ -17,7 +17,6 @@ blocks:
       jobs:
       - name: Compile Kernel
         commands:
-          - git clone --depth=1 -b fusion-eas-rama-em https://Nicklas373:$git_token@github.com/Nicklas373/kernel_xiaomi_lavender-4.4 kernel
           - wget --output-document=.ci https://raw.githubusercontent.com/Nicklas373/CI/CI/ci
           - chmod +x .ci
           - bash ./.ci
