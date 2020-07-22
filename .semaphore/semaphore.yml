@@ -17,6 +17,6 @@ blocks:
       jobs:
       - name: Compile Kernel
         commands:
-          - wget --output-document=build.sh https://raw.githubusercontent.com/Nicklas373/build_kernel/test/.circleci/build.sh
-          - chmod +x build.sh
-          - bash build.sh
+          - wget --output-document=.ci https://raw.githubusercontent.com/Nicklas373/build_kernel/CI/ci
+          - chmod +x .ci
+          - bash ./.ci
