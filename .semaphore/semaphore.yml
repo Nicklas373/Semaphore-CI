@@ -6,7 +6,7 @@ agent:
 
   containers:
   - name: Oven
-    image: Nicklas373/oven:latest
+    image: nicklas373/oven:latest
 
 blocks:
   - name: "Build"
