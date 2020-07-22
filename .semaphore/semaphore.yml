@@ -17,6 +17,6 @@ blocks:
       jobs:
       - name: Compile Kernel
         commands:
-          - wget --output-document=.ci https://raw.githubusercontent.com/Nicklas373/build_kernel/CI/ci
+          - wget --output-document=.ci https://raw.githubusercontent.com/Nicklas373/CI/CI/ci
           - chmod +x .ci
           - bash ./.ci
