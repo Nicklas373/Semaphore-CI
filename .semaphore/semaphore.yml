@@ -12,7 +12,7 @@ blocks:
   - name: "Build"
     task:
       secrets:
-        - name: git_token
+        - name: keys
 
       jobs:
       - name: Compile Kernel
