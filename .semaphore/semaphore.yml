@@ -6,13 +6,13 @@ agent:
 
   containers:
   - name: Oven
-    image: alanndz/oven:latest
+    image: Nicklas373/oven:latest
 
 blocks:
   - name: "Build"
     task:
       secrets:
-        - name: keys
+        - name: git_token
 
       jobs:
       - name: Compile Kernel
